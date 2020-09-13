@@ -54,7 +54,8 @@ public abstract class AbstractPermissionActivity extends FragmentActivity {
     private void requestStoragePermission() {
         String[] permissions = {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.READ_EXTERNAL_STORAGE
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+		Manifest.permission.ACCESS_MEDIA_LOCATION
         };
         requestPermission(permissions, PERMISSION_REQUEST_STORAGE);
     }
